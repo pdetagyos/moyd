@@ -1,0 +1,157 @@
+/* Custom CSS for the Site Page Template*/
+
+/* Page Area */
+
+#page {
+	margin: 0 auto;
+	width: 850px;
+	background-color: #FFFFFF;
+}
+
+#page img {
+  padding: 0px 0px;
+  margin: 0px 0px;
+  display: block; 
+}
+
+/* Top Area */
+
+#toparea {
+  position: relative;
+  padding-top:3px;
+  background-color: #687D77;
+}
+
+#toparea h2 {
+  color: #FFFFFF;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-left: 25px;
+  font-family: serif;
+  font-style: italic;
+}
+
+#tagline {
+	float: right;
+  	font-size: 1.2em;
+  	font-family: serif;
+  	font-style: italic;
+	color: #FFFFFF;
+	padding-right: 20px;
+}
+
+
+/* Middle Area */
+
+#bodytop {
+  background-color: #FFFFFF;
+  padding-top: 7px;
+}
+
+#leftpane {
+  margin-top: 10px;
+  float: left;
+  width: 175px;
+}
+
+/* Main Menu */
+ul.menu
+{
+/*padding: 0 1px 1px;*/
+margin-left: 0;
+font: bold 12px Verdana, sans-serif;
+background: #046380;
+width: 13em;
+text-align: left;
+}
+
+ul.menu li
+{
+list-style: none;
+margin: 0;
+border-top: 1px solid #EFECCA;
+text-align: left;
+}
+
+ul.menu li a
+{
+display: block;
+padding: 0.25em 0.5em 0.25em 0.75em;
+border-left: 1em solid #A7A37E;
+background: #046380;
+text-decoration: none;
+}
+
+ul.menu li a:link { color: #FFFFFF; }
+ul.menu li a:visited { color: #FFFFFF; }
+
+ul.menu li a:hover
+{
+border-color: #EFECCA;
+color: #FFFFFF;
+background: #002F2F;
+}
+
+#active_menu .mainlevel {
+border-color: #EFECCA;
+color: #FFF;
+background: #002F2F;
+}
+
+#contact {
+	margin-top: 100px;
+	text-align: center;
+	font-size: 10pt;
+}
+
+.imagelinks {
+  text-align: center;
+}
+
+
+#mainpane {
+  margin-top: 10px;
+  margin-left: 180px;
+  width: 650px;
+  min-height: 380px;
+}
+
+#mainpane img {
+  display: inline; 
+}
+
+#rightpane {
+  display: none;
+}
+
+/* Footer */
+
+#footer {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: #687D77;
+  color: #EFECCA; 
+}
+
+/* Other formatting */
+
+fieldset {
+  border: 1px solid #ccc;
+}
+
+.form-item label {
+  font-size: 1em;
+  color: #222;
+}
+.item-list .title {
+  font-size: 1em;
+  color: #222;
+}
+
+.standard {
+	width: 600px;
+}
+
+#page .standard img {
+	display: inline;
+}

@@ -1,0 +1,5 @@
+# robots.txt - 	Keeps indexing spiders away from the MoyD folder and any other folders you wish to protect.
+# 				that should not be indexed.
+
+User-agent: *
+Disallow: /manage/       # Don't index anything in this folder

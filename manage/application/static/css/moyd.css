@@ -1,0 +1,251 @@
+/*
+Colors:
+484A47	dark grey
+C2CF96	beige
+ECEBF0	light beige/grey
+687D77	blue grey
+363229	brown grey
+*/
+
+/* Base styles */ 
+* { 
+    font-family: Trebuchet MS, Helvetica, sans-serif; 
+    font-size: 12px;        
+    margin: 0px;
+    padding: 0px;
+} 
+
+
+/* Main styles */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #C2CF96;
+}
+
+#banner {
+	margin: 0px;
+	width: 100%;
+	background-color: #363229;
+	height: 55px;
+}
+
+#bannerImage {
+	background: #c2cf96 url(/manage/application/static/images/moydbanner.png) no-repeat;
+	width:850px;
+	height: 54px;
+	margin: 0px auto;
+}
+
+#content {
+	height: auto !important;
+	height: 100%;
+	width: 810px;
+	margin: 0 auto;
+	margin-bottom: -55px;
+	padding: 10px 20px;
+	border-left: solid 1px #363229;
+	border-right: solid 1px #363229;
+	background-color: #FFFFFF;
+}
+
+.push {
+	height: 55px;
+}
+
+#footer {
+	margin: 0px;
+	height: 55px;
+	clear: both;
+	color: #FFFFFF;
+	background-color: #363229;
+}
+
+#appName {
+	float: left;
+	width: 200px;
+	margin: 20px;
+}
+
+#copyright {
+	float: right;
+	width: 220px;
+	margin: 20px;
+}
+
+#copyright a {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.centered {
+	text-align: center;
+}
+
+#errors {
+	width: 400px;
+	margin-left: 200px;
+	padding: 10px;
+	color: #FFFFFF;
+	background-color: #330000;
+	display: none;
+	text-align: center;
+}
+
+#messages {
+	width: 400px;
+	margin-left: 200px;
+	padding: 10px;
+	color: #FFFFFF;
+	background-color: #006600;
+	display: none;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#formDiv {
+	width: 90%;
+	margin-top: 10px;
+	margin-left: 200px;
+	text-align: left;
+}
+
+.row {
+	clear: both;
+	margin-top: 5px;
+	height: 60px;
+	vertical-align: middle;
+}
+
+.row img {
+	float: left;
+	width: 60px;
+}
+
+.rowLabel {
+	float: left;
+	width: 130px;
+	margin-left: 20px;
+	margin-top: 25px;
+}
+
+.rowData {
+	float: left;
+	width: 400px;
+	margin-top: 20px;
+}
+
+#buttons {
+	width: 100%;
+	height: 40px;
+	margin-top: 15px;
+	padding-left: 150px;
+}
+
+.buttonLink {
+	float: left;
+	margin-left: 20px;
+}
+
+/* Common Styles */
+
+a { 
+	color: #363229;
+	text-decoration: underline; 
+}
+a:hover { color: #687D77; }
+a:visited { color: #363229; }
+
+h1 {  font-size: 20px; }
+h2 { font-size: 18px; }
+h3 { font-size: 14px; }
+
+p { margin: 5px 0px; }
+
+strong { font-size: inherit; }
+
+
+/* Page-specific Styles */
+
+#username {
+	width: 300px;
+}
+
+#loginFailed {
+	width: 400px;
+	height: 20px;
+	padding: 10px;
+	color: #FFFFFF;
+	background-color: #330000;
+	display: none;
+	text-align: center;
+}
+
+#indexDiv .rowLabel {
+	float: left;
+	width: 80px;
+	margin-left: 20px;
+	margin-top: 25px;
+}
+
+.sectionTitle {
+	color: #363229;
+	background-color: #C2CF96;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 5px;
+	padding-left: 15px;
+	margin-top: 10px;
+}
+
+.titleComment {
+	float: right;
+	width: 300px;
+	margin-top: -18px;
+	margin-right: 100px;
+}
+
+.sectionHeader {
+	color: #FFFFFF;
+	background-color: #363229;
+	width: 100%;
+	height: 20px;
+	padding-top: 3px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.leftSide {
+	float: left;
+	margin-left: 15px;
+}
+
+.rightSide {
+	float: left;
+	margin-left: 200px;
+}
+
+.dellink {
+	display: none;
+}
+
+.dellink a {
+	color: #FF0000;
+}
+
+#backToSiteMgmt {
+	float: right;
+	width: 200px;
+	background: transparent url(/manage/application/static/images/editpage.gif) no-repeat 0px 0px;
+	padding: 2px;
+	padding-left: 20px;
+}
+
+.addNewUserLink {
+	background: transparent url(/manage/application/static/images/addNewUser.gif) no-repeat 0px 0px;
+	width: 200px;
+	height: 40px;
+}

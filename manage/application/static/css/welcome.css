@@ -1,0 +1,155 @@
+#manageUsers {
+	float: right;
+	width: 175px;
+	background: transparent url(/manage/application/static/images/manageusers.gif) no-repeat 0px 0px;
+	padding: 2px;
+	padding-left: 20px;
+}
+
+#changePassword {
+	float: right;
+	width: 150px;
+	background: transparent url(/manage/application/static/images/changepassword.gif) no-repeat 0px 0px;
+	padding: 2px;
+	padding-left: 20px;
+}
+
+#logout {
+	float: right;
+	width: 50px;
+	background: transparent url(/manage/application/static/images/logout.gif) no-repeat 0px 0px;
+	padding: 2px;
+	padding-left: 20px;
+}
+
+#youAreHere {
+	width: 100%;
+	clear: both;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.hilite {
+	font-size: 14px;
+	font-weight: bold;
+	color: #880000;
+}
+
+.folderRow {
+	width: 100%;
+	height:	20px;
+	background: transparent url(/manage/application/static/images/folder.png) no-repeat 10px 2px;
+	margin: 3px 0px;
+	padding-left: 40px;
+	padding-top: 3px;
+}
+
+.publishedRow {
+	width: 100%;
+	height:	20px;
+	background: transparent url(/manage/application/static/images/page_pub.png) no-repeat 10px 2px;
+	margin: 3px 0px;
+	padding-left: 40px;
+	padding-top: 3px;
+}
+
+.viewLink {
+	margin-left: 20px;
+	background: transparent url(/manage/application/static/images/viewpage.gif) no-repeat 0px 0px;
+	width: 40px;
+	height: 20px;
+	padding: 2px;
+	padding-left: 20px;
+}
+
+.editLink {
+	margin-left: 20px;
+	background: transparent url(/manage/application/static/images/editpage.gif) no-repeat 0px 0px;
+	width: 40px;
+	height: 20px;
+	padding: 2px;
+	padding-left: 20px;
+}
+
+.unpublishLink {
+	margin-left: 20px;
+	background: transparent url(/manage/application/static/images/unpublish.gif) no-repeat 0px 0px;
+	width: 50px;
+	height: 20px;
+	padding: 2px;
+	padding-left: 20px;
+}
+
+.unpublishedRow {
+	width: 100%;
+	height:	20px;
+	background: transparent url(/manage/application/static/images/page_unpub.png) no-repeat 10px 2px;
+	margin: 3px 0px;
+	padding-left: 40px;
+	padding-top: 3px;
+}
+
+.previewLink {
+	margin-left: 20px;
+	background: transparent url(/manage/application/static/images/previewpage.gif) no-repeat 0px 0px;
+	width: 40px;
+	height: 20px;
+	padding: 2px;
+	padding-left: 20px;
+}
+
+.publishLink {
+	margin-left: 20px;
+	background: transparent url(/manage/application/static/images/publish.gif) no-repeat 0px 0px;
+	width: 40px;
+	height: 20px;
+	padding: 2px;
+	padding-left: 20px;
+}
+
+.deleteLink {
+	margin-left: 20px;
+	background: transparent url(/manage/application/static/images/deletepage.gif) no-repeat 0px 0px;
+	width: 40px;
+	height: 20px;
+	padding: 2px;
+	padding-left: 20px;
+}
+
+.parentFolderRow {
+	background: transparent url(/manage/application/static/images/up.png) no-repeat 10px 2px;
+}
+
+.blankRow {
+	width: 100%;
+	height:	20px;
+	margin: 3px 0px;
+	padding-left: 40px;
+	padding-top: 3px;
+}
+
+.leftSide {
+	margin-left: 0px;
+	width: 200px;
+}
+
+.sectionHeader .leftSide {
+	margin-left: 10px;
+	width: 250px;
+}
+
+.rightSide {
+	margin-left: 0px;
+}
+
+.addNewPageLink {
+	background: transparent url(/manage/application/static/images/addNewPage.gif) no-repeat 0px 0px;
+	width: 200px;
+	height: 40px;
+}
+
+.addNewFolderLink {
+	background: transparent url(/manage/application/static/images/addNewFolder.gif) no-repeat 0px 0px;
+	width: 200px;
+	height: 40px;
+}

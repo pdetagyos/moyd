@@ -1,0 +1,55 @@
+/* Custom Site Styles - These will appear in your page editor for use */
+
+#content {
+	background-color: #FFFFFF; 
+}
+
+body {
+  background-color: #FFFFFF;	
+
+  font-family:
+    "Bookman Old Style",	/* Windows, MacOS */
+    "Serifa BT",			/* Windows XP. Not the same font, but the overall look is close enough. */
+    "URW Bookman L",		/* Unix+X+FontConfig */
+    "itc bookman",			/* Unix+X */
+    times,					/* Unix+X, MacOS */
+    serif;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.1em; 
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+p + p { margin-top: 1em; }		/* Margins for following paragraphs */
+
+blockquote {
+  font-family: Serif;
+  font-size: 1em;
+  font-style: italic;
+  padding: 10px;
+}
+
+table.gallery {
+	border-spacing: 10px;
+	border-collapse: separate;
+}
+
+.comic-font {
+	font-family: "Comic Sans MS";
+}
