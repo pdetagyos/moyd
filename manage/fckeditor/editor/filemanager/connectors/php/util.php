@@ -207,7 +207,7 @@ function IsImageValid( $filePath, $extension )
 	}
 
 	if ( !in_array( $extension, $imageCheckExtensions ) ) {
-		return false;
+		return true;
 	}
 
 	if ( @getimagesize( $filePath ) === false ) {

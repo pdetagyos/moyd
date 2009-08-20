@@ -9,5 +9,14 @@ class Session {
 			header("Location:/manage/index");	
 		}
 	}
+	
+	public static function isVerified() {
+		if ($_SESSION['auth'] == 'simple') {
+            return true;
+        }
+        else {
+            return false;
+        }	    
+	}
 
 }
