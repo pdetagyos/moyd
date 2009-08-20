@@ -95,15 +95,16 @@ html, body {
 }
 
 #messages {
-	width: 400px;
-	margin-left: 200px;
+	width: 500px;
+	margin-left: 150px;
 	padding: 10px;
 	color: #FFFFFF;
-	background-color: #006600;
+	background-color: #777700;
 	display: none;
 	text-align: center;
 	font-size: 14px;
 	font-weight: bold;
+	border: solid 1px #333333;
 }
 
 #formDiv {

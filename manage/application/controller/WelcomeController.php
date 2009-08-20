@@ -41,12 +41,21 @@ class WelcomeController extends Controller {
 	
 	public function showMessage() {
 
+		$this->view->messages = array();
+
 		if ($this->pageState['msg'] == 'passwordChanged') {
 			$this->view->messages[] = 'Your password was changed successfully.';
 		}
 		
+		if ($this->pageState['msg'] == 'saveSuccess') {
+			$this->view->messages[] = "Your changes were saved successfully. When previewing changes, be sure to click your browser's refresh button to see the latest version of the page.";		    
+		}
+		
+		if ($this->pageState['msg'] == 'writeError') {
+			$this->view->messages[] = 'ERROR - the current directory is not writable.';		    
+		}
+
 		$this->get();
-			
 	}
 
 	public function navTo() {
@@ -134,13 +143,22 @@ class WelcomeController extends Controller {
 		$templatePageData = str_replace('[[PAGE_DESCRIPTION]]', $pageDescription, $templatePageData);
 		$templatePageData = str_replace('[[PAGE_KEYWORDS]]', $pageKeywords, $templatePageData);
 		$publishedPageContent = str_replace('[[PAGE_CONTENT]]', $fileData, $templatePageData);
-		file_put_contents(File::getUserPublishingPath() . $currentPageName . '.html', $publishedPageContent);
+
+        $msg = '';
+	    $success = @file_put_contents(File::getUserPublishingPath() . $currentPageName . '.html', $publishedPageContent);
 		
-		// Rename the sandbox file so it doesn't appear on the Welcome page
-		rename(File::getUserSandboxPath() . $currentPageName . '.html', File::getUserSandboxPath() . $currentPageName . '.published');
+		if ($success) {
+    		// Rename the sandbox file so it doesn't appear on the Welcome page
+    		rename(File::getUserSandboxPath() . $currentPageName . '.html', File::getUserSandboxPath() . $currentPageName . '.published');
+
+		    $msg = '/showMessage/msg/saveSuccess';
+	    }
+	    else {
+		    $msg = '/showMessage/msg/writeError';
+		}
 		
 		// Then return to the Welcome page
-		header("Location:/manage/welcome");
+		header("Location:/manage/welcome" . $msg);
 
 	}
 
