@@ -185,7 +185,7 @@ class WelcomeController extends Controller {
 		// Remove the page & its meta file
 		$currentPageName = $this->pageState['page'];
 		unlink(File::getUserSandboxPath() . $currentPageName . '.html');
-		unlink(File::getUserSandboxPath() . $currentPageName . '.config');
+		@unlink(File::getUserSandboxPath() . $currentPageName . '.config');
 		
 		// Then return to the Welcome page
 		header("Location:/manage/welcome");

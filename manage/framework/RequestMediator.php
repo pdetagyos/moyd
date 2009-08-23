@@ -33,7 +33,7 @@ class RequestMediator {
 	*/
 	public function route() {
 			
-		if (class_exists($this->getController())) {
+		if (class_exists(ucwords($this->getController()))) {
 			$rc = new ReflectionClass($this->getController());
 			if ($rc->implementsInterface('IController')) {
 				if ($rc->hasMethod($this->getAction())) {

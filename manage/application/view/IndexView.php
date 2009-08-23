@@ -8,7 +8,7 @@
 	<div class="centered">
 		Please select your name from the list below and enter your password. Then click on the Log in button.
 	</div>
-	<form name="loginForm" method="POST" action="/manage/index">
+	<form name="loginForm" method="POST" action="/manage/Index">
 
 		<div id="messages">
 			<?php 	if ($this->messages) { foreach ($this->messages as $msg) { ?>

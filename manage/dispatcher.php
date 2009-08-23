@@ -11,7 +11,7 @@ require_once('framework/View.php');
 
 // Require the error controller classes
 
-require_once(Constants::$CONTROLLER_DIR . 'site404Controller.php');
+require_once(Constants::$CONTROLLER_DIR . 'Site404Controller.php');
 
 
 // Allow auto-loading of Controller classes on first use
