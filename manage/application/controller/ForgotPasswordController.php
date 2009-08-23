@@ -103,7 +103,7 @@ class ForgotPasswordController extends Controller {
 	
 	private function sendEmail($to, $subject, $message) {
 		// Build email 
-		$header = "From: Master of Your Domain @ " . Config::siteConfig("SITE_URL") . "\n";
+		$header = "From: SiteCrafter @ " . Config::siteConfig("SITE_URL") . "\n";
 	
 		// Send email
 		if(@mail($to, $subject, $message, $header) == false) {
